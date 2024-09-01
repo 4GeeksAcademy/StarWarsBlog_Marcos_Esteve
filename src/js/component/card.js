@@ -1,10 +1,11 @@
 import React from "react"
+import rigoBaby from "../../img/rigo-baby.jpg"
 
 const Card = ({name}) => {
 
     return(
         <div className="card mx-2" style={{ width: "18rem" }}>
-            <img src="https://starwars-visualguide.com/#/characters/1" className="card-img-top" alt="..."/>
+            <img src={rigoBaby} className="card-img-top" alt="Aquí debería haber pasado algo"/>
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
                 <p className="card-text">Hola.</p>
