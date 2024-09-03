@@ -6,13 +6,13 @@ import { Context } from "../store/appContext";
 export const Personajes = props => {
 	const { store, actions } = useContext(Context);
 	const params = useParams();
-	console.log (params)
+	console.log (params);
+	const character = store.characters.find((character, id) => id === parseInt(params.nave_id));
+
 	return (
 		<div className="jumbotron">
 			<h1 className="display-4">This will show the demo element: {params.nave_id}</h1>
-			console.log (params)
-			{/* <p> Esta página corresponde a: {store.characters.name[params]}</p> */}
-
+			<p>El nombre es: {character ? character.name : "personaje no encontrado" } </p>
 			<hr className="my-4" />
 
 			<Link to="/">

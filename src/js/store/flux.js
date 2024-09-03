@@ -17,6 +17,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 				{
 
 				}
+			],
+			starships : [
+				{
+
+				}
 			]
 
 		},
@@ -33,6 +38,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 				.then((data) => {console.log(data);
 					setStore({characters: data.results})});
 				
+			},
+			loadPlanetData : () =>{
+				const store = getStore();
+				fetch("https://www.swapi.tech/api/starships")
+				.then((response)=> response.json())
+				.then ((data)=> {
+					console.log(data);
+					setStore({starships: data.results}
+
+				)});
 			},
 			changeColor: (index, color) => {
 				//get the store

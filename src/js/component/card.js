@@ -10,6 +10,7 @@ const Card = ({name, index}) => {
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
                 <p className="card-text">Hola.</p>
+                <p>{index}</p>
                 
                 <Link to={"/personajes/" + index} >
                     <button className="btn btn-primary"> 

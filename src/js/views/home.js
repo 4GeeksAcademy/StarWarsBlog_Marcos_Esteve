@@ -21,7 +21,12 @@ export const Home = () =>{
 		</div>
 		<br/>
 		<div>
-			Hola
+			<h1>StarShips</h1>
+		</div>
+		<div className="row flex-row flex-nowrap mt-4" style={{overflowX: "auto"}}>
+			{store.starships.map((character, index)=>(
+						<Card key={index}  name={character.name} index={index}/>
+				))}
 		</div>
 	</div>
 )};
