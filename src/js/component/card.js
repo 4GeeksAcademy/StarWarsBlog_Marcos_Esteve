@@ -1,7 +1,8 @@
 import React from "react"
 import rigoBaby from "../../img/rigo-baby.jpg"
+import { Link } from "react-router-dom";
 
-const Card = ({name}) => {
+const Card = ({name, index}) => {
 
     return(
         <div className="card mx-2" style={{ width: "18rem" }}>
@@ -9,7 +10,12 @@ const Card = ({name}) => {
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
                 <p className="card-text">Hola.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                
+                <Link to={"/personajes/" + index} >
+                    <button className="btn btn-primary"> 
+                        Go somewhere
+                    </button>
+                </Link>
             </div>
         </div>
     )

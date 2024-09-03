@@ -30,7 +30,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 				setStore({characters: []})
 				fetch("https://www.swapi.tech/api/people")
 				.then((response) => response.json())
-				.then((data) => setStore({characters: data.results}));
+				.then((data) => {console.log(data);
+					setStore({characters: data.results})});
+				
 			},
 			changeColor: (index, color) => {
 				//get the store
