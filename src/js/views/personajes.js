@@ -7,11 +7,11 @@ export const Personajes = props => {
 	const { store, actions } = useContext(Context);
 	const params = useParams();
 	console.log (params);
-	const character = store.characters.find((character, id) => id === parseInt(params.nave_id));
+	const character = store.characters.find((character, id) => id === parseInt(params.personaje_id));
 
 	return (
 		<div className="jumbotron">
-			<h1 className="display-4">This will show the demo element: {params.nave_id}</h1>
+			<h1 className="display-4">This will show the demo element: {params.personaje_id}</h1>
 			<p>El nombre es: {character ? character.name : "personaje no encontrado" } </p>
 			<hr className="my-4" />
 
