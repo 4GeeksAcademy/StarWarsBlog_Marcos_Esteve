@@ -2,7 +2,8 @@ import React from "react"
 import rigoBaby from "../../img/rigo-baby.jpg"
 import { Link } from "react-router-dom";
 
-const Card = ({name, index}) => {
+const Card = ({name, index, route}) => {
+    console.log(route)
 
     return(
         <div className="card mx-2" style={{ width: "18rem" }}>
@@ -12,7 +13,7 @@ const Card = ({name, index}) => {
                 <p className="card-text">Hola.</p>
                 <p>{index}</p>
                 
-                <Link to={"/personajes/" + index} >
+                <Link to={route + index} >
                     <button className="btn btn-primary"> 
                         Go somewhere
                     </button>
