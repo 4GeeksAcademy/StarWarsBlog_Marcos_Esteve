@@ -21,9 +21,15 @@ export const Personajes = props => {
 			<hr className="my-4" />
 			<p>Nuestro personaje tiene la posición en la api de: {parseInt(params.personaje_id)+1} </p>
 			<p>Datos: {Datos_personajes.height} </p>
-			<div className="container-fluid">
+			<div className="container">
 				<div className="row">
-
+					<div className="col-12 col-md-6">
+						<img src="tu-imagen.jpg" className="img-fluid w-100" alt="Descripción de la imagen"/>
+					</div>
+					<div className="col-12 col-md-6">
+						<h2>Información del personaje</h2>
+						<p>Este es el texto que va junto a la imagen. Puedes agregar todo el contenido que necesites aquí.</p>
+					</div>
 				</div>
 			</div>
 
