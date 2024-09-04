@@ -21,6 +21,11 @@ export const Personajes = props => {
 			<hr className="my-4" />
 			<p>Nuestro personaje tiene la posición en la api de: {parseInt(params.personaje_id)+1} </p>
 			<p>Datos: {Datos_personajes.height} </p>
+			<div className="container-fluid">
+				<div className="row">
+
+				</div>
+			</div>
 
 			<Link to="/">
 				<span className="btn btn-primary btn-lg" href="#" role="button">
