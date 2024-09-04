@@ -16,7 +16,7 @@ export const Home = () =>{
 		</div>
 		<div className="row flex-row flex-nowrap mt-4" style={{overflowX: "auto"}}>
 			{store.characters.map((character, index)=>(
-					<Card key={index}  name={character.name} index={index} route ="/personajes/"/>
+					<Card key={index}  name={character.name} index = {index} id={character.uid} route ="/personajes/"/>
 			))}
 		</div>
 		<br/>
@@ -25,7 +25,7 @@ export const Home = () =>{
 		</div>
 		<div className="row flex-row flex-nowrap mt-4" style={{overflowX: "auto"}}>
 			{store.starships.map((character, index)=>(
-						<Card key={index}  name={character.name} index={index} route ="/naves/" />
+						<Card key={index}  name={character.name} index = {index} route ="/naves/" />
 				))}
 		</div>
 	</div>

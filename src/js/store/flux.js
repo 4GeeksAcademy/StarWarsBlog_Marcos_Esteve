@@ -22,6 +22,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 				{
 
 				}
+			],
+			characters_data: [
+				{
+					
+				}
 			]
 
 		},
