@@ -16,7 +16,7 @@ export const Personajes = props => {
 		})
 	}, [params.personaje_id])
 	return (
-		<div className="jumbotron">
+		<div className="jumbotron mx-4">
 			<h1 className="display-4">{character ? character.name : "personaje no encontrado"}</h1>
 			<hr className="my-4" />
 			<p>Nuestro personaje tiene la posición en la api de: {parseInt(params.personaje_id)+1} </p>
@@ -28,7 +28,12 @@ export const Personajes = props => {
 					</div>
 					<div className="col-12 col-md-6">
 						<h2>Información del personaje</h2>
-						<p>Este es el texto que va junto a la imagen. Puedes agregar todo el contenido que necesites aquí.</p>
+						<ul>
+							<li><b>Height:</b> {Datos_personajes.height && Datos_personajes.height !== "n/a" ? Datos_personajes.height : "Lo siento, creo que es algo abstracto" } cm</li>
+							<li><b>Mass:</b>Altura: {Datos_personajes.mass && Datos_personajes.mass !== "n/a" ? Datos_personajes.mass : "Al parecer, no pesa nada"} Kg</li>
+							<li><b>Hair Color:</b> {Datos_personajes.hair_color && Datos_personajes.hair_color !== "n/a" ? Datos_personajes.hair_color : "No tiene color de pelo"}</li>
+							<li><b>Skin Color:</b> {Datos_personajes.skin_color && Datos_personajes.skin_color !== "n/a" ? Datos_personajes.skin_color : "No tiene piel"}</li>
+						</ul>
 					</div>
 				</div>
 			</div>
