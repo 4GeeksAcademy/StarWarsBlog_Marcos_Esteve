@@ -10,23 +10,24 @@ export const Home = () =>{
 	
 
  return (
-	<div className="mx-4 min-vh-100">
-		<div>
+	<div className=" min-vh-100 p-0 m-0" style={{backgroundColor: "#2a3b47"}}>
+		<div className="text-white px-4 pt-4">
 			<h1>Characters</h1>
 		</div>
-		<div className="row flex-row flex-nowrap mt-4" style={{overflowX: "auto"}}>
+		<div className="row flex-row flex-nowrap  mt-4 px-4" style={{overflowX: "auto"}}>
 			{store.characters.map((character, index)=>(
 					<Card key={index}  name={character.name} index = {index} id={character.uid} route ="/personajes/"/>
 			))}
 		</div>
 		<br/>
-		<div>
+		<div className="text-white px-4">
 			<h1>StarShips</h1>
 		</div>
-		<div className="row flex-row flex-nowrap mt-4" style={{overflowX: "auto"}}>
+		<div className="row flex-row flex-nowrap mt-4 px-4" style={{overflowX: "auto"}}>
 			{store.starships.map((character, index)=>(
 						<Card key={index}  name={character.name} index = {index} route ="/naves/" />
 				))}
 		</div>
+		<br/>
 	</div>
 )};

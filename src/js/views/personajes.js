@@ -16,15 +16,13 @@ export const Personajes = props => {
 		})
 	}, [params.personaje_id])
 	return (
-		<div className="jumbotron mx-4">
+		<div className="jumbotron mx-4 min-vh-100">
 			<h1 className="display-4">{character ? character.name : "personaje no encontrado"}</h1>
 			<hr className="my-4" />
-			<p>Nuestro personaje tiene la posición en la api de: {parseInt(params.personaje_id)+1} </p>
-			<p>Datos: {Datos_personajes.height} </p>
 			<div className="container">
 				<div className="row">
 					<div className="col-12 col-md-6">
-						<img src="tu-imagen.jpg" className="img-fluid w-100" alt="Descripción de la imagen"/>
+						<img src="https://media.revistagq.com/photos/604b2f499fc97c95e82c1c14/master/pass/2101913.jpg" className="img-fluid w-100" alt="Descripción de la imagen"/>
 					</div>
 					<div className="col-12 col-md-6">
 						<h2>Información del personaje</h2>
@@ -34,15 +32,17 @@ export const Personajes = props => {
 							<li><b>Hair Color:</b> {Datos_personajes.hair_color && Datos_personajes.hair_color !== "n/a" ? Datos_personajes.hair_color : "No tiene color de pelo"}</li>
 							<li><b>Skin Color:</b> {Datos_personajes.skin_color && Datos_personajes.skin_color !== "n/a" ? Datos_personajes.skin_color : "No tiene piel"}</li>
 						</ul>
+						<hr className="my-4" />
+						<div className="mt-auto">
+							<Link to="/">
+								<span className="btn btn-primary btn-lg mt-2" href="#" role="button">
+									Volver al listado
+								</span>
+							</Link>
+						</div>
 					</div>
 				</div>
 			</div>
-
-			<Link to="/">
-				<span className="btn btn-primary btn-lg" href="#" role="button">
-					Back home
-				</span>
-			</Link>
 		</div>
 	);
 };
