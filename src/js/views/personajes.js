@@ -43,6 +43,7 @@ export const Personajes = props => {
 					</div>
 				</div>
 			</div>
+			<hr className="my-4" />
 		</div>
 	);
 };
