@@ -40,7 +40,7 @@ export const Naves = props => {
 						</ul>
 						<hr className="my-4" />
 						<div className="mt-auto">
-							<Link to="/">
+							<Link to="/home">
 								<span className="btn btn-primary btn-lg mt-2" href="#" role="button">
 									Volver al listado
 								</span>
