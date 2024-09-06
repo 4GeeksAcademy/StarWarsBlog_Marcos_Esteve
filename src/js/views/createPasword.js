@@ -1,14 +1,11 @@
 import React, {useContext} from "react";
 import "../../styles/home.css";
 import { Context } from "../store/appContext";
-import Card from "../component/card.js";
-
 
 
 export const CreatePasword = () =>{
 	const { store, actions } = useContext(Context);
 	
-
  return (
 	<div className="d-flex justify-content-center align-items-center">
         <div>
