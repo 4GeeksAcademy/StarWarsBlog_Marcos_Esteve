@@ -10,8 +10,8 @@ export const Home = () =>{
 	
 
  return (
-	<div className=" min-vh-100 p-0 m-0" style={{backgroundColor: "#2a3b47"}}>
-		<div className="text-white px-4 pt-4">
+	<div className=" min-vh-100 p-0 m-0" style={{backgroundColor: "#e9f0f5"}}>
+		<div className="text-dark px-4 pt-4">
 			<h1>Characters</h1>
 		</div>
 		<div className="row flex-row flex-nowrap  mt-4 px-4" style={{overflowX: "auto"}}>
@@ -20,7 +20,7 @@ export const Home = () =>{
 			))}
 		</div>
 		<br/>
-		<div className="text-white px-4">
+		<div className="text-dark px-4">
 			<h1>StarShips</h1>
 		</div>
 		<div className="row flex-row flex-nowrap mt-4 px-4" style={{overflowX: "auto"}}>
@@ -31,3 +31,6 @@ export const Home = () =>{
 		<br/>
 	</div>
 )};
+
+
+// #2a3b47

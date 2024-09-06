@@ -8,6 +8,7 @@ export const Personajes = props => {
 	const params = useParams();
 	const [Datos_personajes, setDatos_personajes] = useState({}) 
 	const character = store.characters.find((character, id) => id === parseInt(params.personaje_id));
+	const nameCharacter = character ? character.name : ""
 	useEffect(()=>{
 		fetch(`https://www.swapi.tech/api/people/${parseInt(params.personaje_id) + 1}`)
 		.then((response) => response.json())
@@ -27,10 +28,11 @@ export const Personajes = props => {
 					<div className="col-12 col-md-6">
 						<h2>Información del personaje</h2>
 						<ul>
-							<li><b>Height:</b> {Datos_personajes.height && Datos_personajes.height !== "n/a" ? Datos_personajes.height : "Lo siento, creo que es algo abstracto" } cm</li>
-							<li><b>Mass:</b>Altura: {Datos_personajes.mass && Datos_personajes.mass !== "n/a" ? Datos_personajes.mass : "Al parecer, no pesa nada"} Kg</li>
-							<li><b>Hair Color:</b> {Datos_personajes.hair_color && Datos_personajes.hair_color !== "n/a" ? Datos_personajes.hair_color : "No tiene color de pelo"}</li>
-							<li><b>Skin Color:</b> {Datos_personajes.skin_color && Datos_personajes.skin_color !== "n/a" ? Datos_personajes.skin_color : "No tiene piel"}</li>
+							<li><b>Height:</b> {Datos_personajes.height && Datos_personajes.height !== "n/a" && Datos_personajes.height !=="none" ? Datos_personajes.height : "Lo siento, creo que es algo abstracto" } cm</li>
+							<li><b>Mass:</b>Altura: {Datos_personajes.mass && Datos_personajes.mass !== "n/a" && Datos_personajes.mass !=="none" ? Datos_personajes.mass : "Al parecer, no pesa nada"} Kg</li>
+							<li><b>Hair Color:</b> {Datos_personajes.hair_color && Datos_personajes.hair_color !== "n/a" && Datos_personajes.hair_color !=="none" ? Datos_personajes.hair_color : "No tiene color de pelo"}</li>
+							<li><b>Skin Color:</b> {Datos_personajes.skin_color && Datos_personajes.skin_color !== "n/a" && Datos_personajes.skin_color !=="none" ? Datos_personajes.skin_color : "No tiene piel"}</li>
+							<li><b>Description:</b> {store.description_personajes.find(personaje => personaje.name === nameCharacter)?.description || "Descripción no disponible"}</li>
 						</ul>
 						<hr className="my-4" />
 						<div className="mt-auto">
