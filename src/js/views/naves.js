@@ -28,7 +28,7 @@ export const Naves = props => {
 					<div className="col-12 col-md-6">
 						<h2>Información de la nave </h2>
 						<ul>
-							<li><b>Manufacturer:</b> {Datos_starships.manufacturer && Datos_starships.manufacturer !== "n/a" && Datos_starships.manufacturer !=="none" ? Datos_starships.manufacturer : "LA fabricaron a mano" } </li>
+							<li><b>Manufacturer:</b> {Datos_starships.manufacturer && Datos_starships.manufacturer !== "n/a" && Datos_starships.manufacturer !=="none" ? Datos_starships.manufacturer : "La fabricaron a mano" } </li>
 							<li><b>Model:</b> {Datos_starships.model && Datos_starships.model !== "n/a" && Datos_starships.model !=="none" ? Datos_starships.model : "No está registrada la nave"}</li>
 							<li><b>Passengers:</b> {Datos_starships.passengers && Datos_starships.passengers !== "n/a" && Datos_starships.passengers !=="none" ? Datos_starships.passengers : "Al parecer, solo lleva carga"} </li>
 							<li><b>Consumables:</b> {Datos_starships.consumables && Datos_starships.consumables !== "n/a" && Datos_starships.consumables !=="none" ? Datos_starships.consumables : "Información no disponible"}</li>
