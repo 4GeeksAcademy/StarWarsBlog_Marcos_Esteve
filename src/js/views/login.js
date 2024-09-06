@@ -23,6 +23,9 @@ export const Login = () =>{
             <Link to="/home">
                 <button type="submit" className="btn btn-primary w-100" style = {{fontFamily: "Orbitron"}}>Submit</button>
             </Link>
+            <Link to="/pasword">
+                <button type="submit" className="btn btn-primary w-100" style = {{fontFamily: "Orbitron"}}>Create a new password</button>
+            </Link>
         </form>
     </div>
 </div>

@@ -12,6 +12,7 @@ import {Login} from "./views/login"
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Planetas } from "./views/planetas"
+import {CreatePasword} from "./views/createPasword"
 
 //create your first component
 const Layout = () => {
@@ -27,6 +28,7 @@ const Layout = () => {
 					<Routes>
 						<Route path="/" element={<Login/>} />
 						<Route path="/home" element={<Home />} />
+						<Route path="/pasword" element ={<CreatePasword />} />
 						<Route path="/planets/:planets_id" element={<Planetas />} />
 						<Route path="/demo" element={<Demo />} />
 						<Route path="/personajes/:personaje_id" element={<Personajes />} />
