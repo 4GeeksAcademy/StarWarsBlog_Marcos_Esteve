@@ -113,9 +113,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 			],
 			favorites: [
-				{
-					
-				}
+				
+			],
+			icon_status : [
+				false
 			]
 
 		},
@@ -123,6 +124,19 @@ const getState = ({ getStore, getActions, setStore }) => {
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {
 				getActions().changeColor(0, "green");
+			},
+			change_icone_true : () => {
+				const store = getStore();
+				setStore({icon_status: true})
+			},
+			setFavorites: (nuevos_favoritos) => {
+				const store = getStore()
+				setStore({favorites: nuevos_favoritos})
+			},
+			love_icon : (name) =>{
+				console.log(name)
+				const store = getStore();
+				setStore({favorites: [...store.favorites, name]})
 			},
 			loadSomeData: () => {
 				const store = getStore();
