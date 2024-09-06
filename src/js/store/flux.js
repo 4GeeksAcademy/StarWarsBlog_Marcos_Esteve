@@ -111,6 +111,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 					name: "Rebel transport",
 					description: "The distinctive shape and hue of a Republic Cruiser is instantly recognizable throughout the galaxy, indicating a vessel on a mission for the Galactic Senate, the Supreme Chancellor, or the Jedi Order. Chancellor Valorum dispatched a Republic Cruiser carrying two important Jedi ambassadors to negotiate an end to the Trade Federation Blockade of Naboo. The cruiser docked within a Trade Federation battleship's cavernous landing bay. On the orders of Darth Sidious, the Trade Federation ambushed the Jedi ambassadors. The crew of the cruiser was caught by surprise, destroyed by a concealed turbolaser turret."
 				}
+			],
+			favorites: [
+				{
+					
+				}
 			]
 
 		},

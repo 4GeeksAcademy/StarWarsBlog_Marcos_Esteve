@@ -12,7 +12,7 @@ export const Home = () =>{
  return (
 	<div className=" min-vh-100 p-0 m-0" style={{backgroundColor: "#e9f0f5"}}>
 		<div className="text-dark px-4 pt-4">
-			<h1>Characters</h1>
+			<h2 style = {{fontFamily: "Orbitron"}}>Characters</h2>
 		</div>
 		<div className="row flex-row flex-nowrap  mt-4 px-4" style={{overflowX: "auto"}}>
 			{store.characters.map((character, index)=>(
@@ -21,7 +21,7 @@ export const Home = () =>{
 		</div>
 		<br/>
 		<div className="text-dark px-4">
-			<h1>StarShips</h1>
+			<h2 style = {{fontFamily: "Orbitron"}}>StarShips</h2>
 		</div>
 		<div className="row flex-row flex-nowrap mt-4 px-4" style={{overflowX: "auto"}}>
 			{store.starships.map((starship, index)=>(

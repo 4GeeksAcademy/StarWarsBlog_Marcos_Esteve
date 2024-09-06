@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 export const Navbar = () => {
 
 	return (
@@ -12,9 +13,14 @@ export const Navbar = () => {
 				<h1 style={{fontFamily: "Orbitron"}}>STAR WARS</h1>
 			</div>
 			<div className="ml-auto">
-				<Link to="/">
-					<button className="btn btn-primary mx-4">Favorites</button>
-				</Link>
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle mx-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Favorites
+				</button>
+				<ul class="dropdown-menu dropdown-menu-end">
+					{/* {irá store.map} */}
+				</ul>
+			</div>
 			</div>
 		</nav>
 	);
