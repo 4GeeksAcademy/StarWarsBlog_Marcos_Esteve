@@ -43,6 +43,11 @@ export const Navbar = () => {
 							</li>
 						)}
 					</ul>
+					<Link to="/">
+						<button className="btn btn-danger mx-4">
+							Log Out
+						</button>
+					</Link>
 				</div>
 			</div>
 		</nav>
