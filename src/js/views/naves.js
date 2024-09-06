@@ -23,7 +23,7 @@ export const Naves = props => {
 			<div className="container">
 				<div className="row">
 					<div className="col-12 col-md-6">
-						<img src="https://media.revistagq.com/photos/604b2f499fc97c95e82c1c14/master/pass/2101913.jpg" className="img-fluid w-100" alt="Descripción de la imagen"/>
+						<img src="https://frikipolis.com/wp-content/uploads/2022/09/halcon-milenario.jpg" className="img-fluid w-100" alt="Descripción de la imagen"/>
 					</div>
 					<div className="col-12 col-md-6">
 						<h2>Información de la nave </h2>

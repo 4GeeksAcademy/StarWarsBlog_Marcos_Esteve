@@ -29,6 +29,14 @@ export const Home = () =>{
 				))}
 		</div>
 		<br/>
+		<div className="text-dark px-4">
+			<h2 style = {{fontFamily: "Orbitron"}}>Planets</h2>
+		</div>
+		<div className="row flex-row flex-nowrap mt-4 px-4" style={{overflowX: "auto"}}>
+			{store.planets.map((planets, index)=>(
+						<Card key={index}  name={planets.name} index = {index} id={planets.uid} route ="/planets/" />
+				))}
+		</div>
 	</div>
 )};
 
