@@ -69,6 +69,48 @@ const getState = ({ getStore, getActions, setStore }) => {
 					name: "Obi-Wan Kenobi",
 					description: "A legendary Jedi Master, Obi-Wan Kenobi was a noble man and gifted in the ways of the Force. He trained Anakin Skywalker, served as a general in the Republic Army during the Clone Wars, and guided Luke Skywalker as a mentor."
 				},
+			],
+			description_starships: [
+				{
+					name: "CR90 corvette",
+					description: "Inferno Squad’s primary vessel and home, the Raider II-class corvette Corvus was assigned to Captain Iden Versio following the Battle of Yavin. Outfitted with turbolasers, a hyperdrive, and room for a sizable crew, the agile Corvus is a dangerous enemy for Rebel starfighters. Since Yavin 4, the Corvus has been on hundreds of black operations, as well as plenty of known battles such as the Battle of Endor."
+				},
+				{
+					name:"Star Destroyer",
+					description: "The Super Star Destroyer is one of the largest, most powerful Imperial vessels ever created. A smooth hull presents an arrowhead shaped profile when viewed from above. Resting in the center of this hull is an island of habitable volume. Weapons emplacements bristle on the layered city-like surface. The trapezoidal command tower stands near the aft end of this island, capped with two geodesic communication and deflection domes. The underside is a busy network of engineering and superstructure. Thirteen colossal engine thrusters glow blood red as they push the immense craft through space."
+				},
+				{
+					name: "Sentinel-class landing craft",
+					description: "Gobi Glie's starship may not look like much from the outside, but it holds untold riches for a young Hera Syndulla. At the controls of the craft, Gobi teaches the young girl how to fly on instinct, entrusting her with his ship with the exception of take-off and landing. The craft is also an essential part of the freedom fighter's work to shore up armaments for Ryloth after the Imperial occupation begins in the time of the Empire. On one occasion, Gobi and Hera met Clone Force 99 on Ryloth's moon to secure weapons for the coming civil war, smuggling the elicit cargo inside the ship's ample hold."
+				},
+				{
+					name: "Death Star",
+					description: "Darth Vader piloted this distinctive experimental TIE fighter above the first Death Star, using its blaster cannons and his uncanny abilities with the Force to blast Rebel starfighters into glittering fragments."
+				},
+				{
+					name: "Y-wing",
+					description: "The Y-wing is a workhorse starfighter has been in use since the Clone Wars. Used for dogfights and for bombing runs against capital ships and ground targets, Y-wings are often overshadowed by newer models such as the X-wing and the A-wing. But the Y-wing's historical importance is remarkable, and it has reliably served multiple generations of star pilots."
+				},
+				{
+					name: "Millennium Falcon",
+					description: "An extensively modified Corellian light freighter, the Millennium Falcon is a legend in smuggler circles and is coveted by many for being the fastest hunk of junk in the galaxy. Despite her humble origins and shabby exterior, the ship that made the Kessel Run in less than 12 parsecs has played a role in some of the greatest victories of the Rebel Alliance and the New Republic. The Falcon looks like a worn-out junker, but beneath her hull she’s full of surprises. A succession of owners, including Lando Calrissian and Han Solo, have made special modifications that boosted the freighter’s speed, shielding and firepower to impressive and downright illegal levels. The price of such tinkering? The Falcon can be unpredictable, with her hyperdrive particularly balky. Despite her flaws, she’s beloved by her owners – Han Solo and Chewbacca spent years searching the galaxy for the ship they once called home, rejoicing when they finally reclaimed her."
+				},
+				{
+					name: "TIE Advanced x1",
+					description: "Reminiscent in design of the Empire's TIE interceptor and Darth Vader's TIE advanced, Kylo Ren's TIE silencer is an angular fighter equipped with laser cannons and missile launchers. Ren is an expert pilot -- thanks to skills passed down from his father -- which he puts to use in exploiting his ship's speed and ferocity. There is no other First Order craft like the TIE silencer, and it is an effective tool in Ren's mission to destroy the Resistance."
+				},
+				{
+					name: "Executor",
+					description: "The mighty flagship of Darth Vader, the Executor led Death Squadron during the Empire’s assault on Hoth and pursued the Millennium Falcon to Bespin, where Luke Skywalker and his friends narrowly escaped her tractor beams. First commanded by Admiral Ozzel and later by Admiral Piett, the massive warship met her end during the Battle of Endor, when a rebel A-wing smashed through her command bridge. Out of control, the Executor careened into the Death Star and exploded."
+				},
+				{
+					name: "X-wing",
+					description: "Though an outdated starfighter, the Z-95 boasts endurance and adaptability. The clone pilots of the Galactic Republic used the Z-95 Headhunter during the Clone Wars. A multi-purpose starfighter, the Z-95 has spawned countless variants, with the Republic making its own mark on the Headhunter's large production run with a clone trooper-specific model. The Z-95 is largely recognized as a respectable and versatile snub-fighter of its era, and was the forerunner of the incredibly successful X-wing starfighter."
+				},
+				{
+					name: "Rebel transport",
+					description: "The distinctive shape and hue of a Republic Cruiser is instantly recognizable throughout the galaxy, indicating a vessel on a mission for the Galactic Senate, the Supreme Chancellor, or the Jedi Order. Chancellor Valorum dispatched a Republic Cruiser carrying two important Jedi ambassadors to negotiate an end to the Trade Federation Blockade of Naboo. The cruiser docked within a Trade Federation battleship's cavernous landing bay. On the orders of Darth Sidious, the Trade Federation ambushed the Jedi ambassadors. The crew of the cruiser was caught by surprise, destroyed by a concealed turbolaser turret."
+				}
 			]
 
 		},

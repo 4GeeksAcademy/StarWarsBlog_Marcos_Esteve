@@ -24,8 +24,8 @@ export const Home = () =>{
 			<h1>StarShips</h1>
 		</div>
 		<div className="row flex-row flex-nowrap mt-4 px-4" style={{overflowX: "auto"}}>
-			{store.starships.map((character, index)=>(
-						<Card key={index}  name={character.name} index = {index} route ="/naves/" />
+			{store.starships.map((starship, index)=>(
+						<Card key={index}  name={starship.name} index = {index} id={starship.uid} route ="/naves/" />
 				))}
 		</div>
 		<br/>
